@@ -4,7 +4,6 @@ public partial class Form1 : Form
 {
     private Dictionary<string, List<string>> estruturaPreviewSimulada = new();
     private string? explorerGrupoAtual = null;
-    private string explorerCaminhoAtual = string.Empty;
     private List<MoveAction> historicoMovimentos = new();
 
     public class MoveAction { public string? Source { get; set; } public string? Destination { get; set; } }
