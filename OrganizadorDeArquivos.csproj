@@ -1,0 +1,55 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+
+    <!-- Ícone principal do aplicativo -->
+    <ApplicationIcon>resources\icons\organizando.ico</ApplicationIcon>
+
+    <AssemblyName>OrganizadorDeArquivos</AssemblyName>
+    <Company>Rafael Ribeiro Software</Company>
+    <Product>Organizador de Arquivos</Product>
+    <Description>Aplicativo nativo de organização automática de pastas</Description>
+    <Copyright>© 2025 Rafael Ribeiro</Copyright>
+    <Version>1.0.0.0</Version>
+    <FileVersion>1.0.0.0</FileVersion>
+    <FileDescription>Organizador de Arquivos - Rafael Ribeiro Software</FileDescription>
+
+  </PropertyGroup>
+
+  <ItemGroup>
+
+    <Content Include="resources\icons\organizando.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+
+    <Content Include="resources\icons\pasta.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\icons\videoteste.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\icons\imagem.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\icons\texto.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\icons\programa.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <!-- Garante que o ícone será incluído no build -->
+  <ItemGroup>
+    <EmbeddedResource Include="resources\icons\*.png" />
+    <Content Include="resources\icons\organizando.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>
